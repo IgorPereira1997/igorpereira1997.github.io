@@ -1,0 +1,251 @@
+/* Estilos CSS personalizados */
+
+/* Estilizando o corpo da página */
+body {
+  display: flex;
+  background-color: #0C2365;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+}
+
+/* Estilizando o cabeçalho */
+header {
+  /*background-color: #f8f9fa;
+  padding: 20px;*/
+  text-align: center;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header img.header-logo{
+  max-width: 50%;
+}
+
+main h2{
+  padding: 10px;
+}
+
+section.download-section, section.installation-section, section.description-section{
+  padding: 20px 20px 0px 20px;
+  margin: 0 auto;
+}
+
+/* Estilos para a seção de descrição */
+
+.description-section {
+  text-align: center;
+}
+
+.description-section h2 {
+  text-align: center;
+}
+
+/* Estilos para a seção de download */
+.download-section {
+  text-align: center;
+}
+
+/* Estilos para a seção de instalação */
+.installation-section {
+  text-align: justify;
+}
+
+
+.installation-section p#centralized{
+  text-align: center;
+}
+
+.installation-section h2{
+  text-align: center;
+}
+
+#myCarousel {
+  margin-top: 20px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+#myCarouselVideo {
+  margin-top: 20px;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.carousel-item p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-item img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.demo-section h2{
+  margin-bottom: 70px;
+}
+
+.video-settings {
+  max-width: 50%;
+}
+
+/* Estilos para a seção de demonstração */
+.demo-section {
+  text-align: center;
+  padding: 20px 20px 40px 20px;
+  margin-bottom: 40px;
+}
+
+/* Estilos para a seção de research */
+.research-section {
+  text-align: center;
+  padding: 20px 20px 40px 20px;
+  margin-bottom: 40px;
+}
+
+a[disabled="disabled"] {
+  pointer-events: none;
+}
+
+section.info-section {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 20px 40px 20px;
+}
+
+section.info-section p span{
+  font-weight: bold;
+  color: #41f56b;
+}
+
+/* Estilizando as seções */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Estilizando o botão de download */
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.ios {
+  background-color: #007bff;
+}
+
+.android {
+  background-color: #28a745;
+}
+
+/* Estilizando as imagens */
+img {
+  max-width: 100%;
+}
+
+/* Estilizando o rodapé */
+footer {
+  margin-top: 50px;
+  background-color: black;
+  padding: 10px 10px 0px 10px;
+  text-align: center;
+  position: fixed;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  z-index: 2;
+}
+
+/* Estilos específicos para cada tamanho de tela usando as classes do Bootstrap */
+@media (min-width: 576px) {
+  /* Estilos para telas pequenas (celulares em modo retrato) */
+  header {
+    padding: 40px;
+  }
+  .video-settings {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Estilos para telas médias (tablets e celulares em modo paisagem) */
+  header img.header-logo{
+    max-width: 40%;
+  }
+  section {
+    padding: 20px;
+  }
+
+  .carousel-item img {
+    max-width: 35%;
+    max-height: 35%;
+  }
+
+  .video-settings {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Estilos para telas grandes (computadores desktop) */
+  header img.header-logo{
+    max-width: 30%;
+  }
+  .carousel-item img {
+    max-width: 25%;
+    max-height: 25%;
+  }
+
+  .video-settings {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Estilos para telas extra grandes (computadores desktop com telas maiores) */
+  header img.header-logo{
+    max-width: 20%;
+  }
+
+  .carousel-item img {
+    max-width: 15%;
+    max-height: 15%;
+  }
+
+  .video-settings {
+    max-width: 25%;
+  }
+
+}
