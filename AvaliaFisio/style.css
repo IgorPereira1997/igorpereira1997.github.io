@@ -360,6 +360,7 @@ section.description-section{
 }
 
 #myCarousel {
+  min-height: 600px;
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -368,6 +369,9 @@ section.description-section{
   position: relative;
   z-index: 1;
   background: radial-gradient(circle at 50% 50%, #5de0e6, #004aad, #101728);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #myCarousel span#carousel-control-prev-icon{
@@ -381,11 +385,18 @@ section.description-section{
 
 
 #myCarouselVideo {
-  margin-top: 20px;
+  min-height: 600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
   z-index: 1;
   background: radial-gradient(closest-side at 50% 50%, #101728, #5de0e6, #004aad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #myCarouselVideo video{
@@ -393,13 +404,18 @@ section.description-section{
 }
 
 .carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
 .carousel-item {
+  margin-right: 0;
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
+  transition: transform .5s ease;
 }
 
 .carousel-item p {
@@ -413,17 +429,18 @@ section.description-section{
   border-radius: 10px;
 }
 
-.carousel-control-next, .carousel-control-prev{
+.installation-section .carousel-control-next, .installation-section .carousel-control-prev{
   text-decoration: none;
+  color:aqua;
+  font-size: 40px;
 }
 
-.carousel-control-prev-icon .fas,
-.carousel-control-next-icon .fas{
-  /* Substitua 'caminho-para-o-seu-icone.png' pelo caminho do seu ícone personalizado */
-  color: #57E4FF;
-  /* Altere 'red' para a cor desejada */
-}
 
+.demo-section .carousel-control-next, .demo-section .carousel-control-prev{
+  text-decoration: none;
+  color:white;
+  font-size: 40px;
+}
 .demo-section h2{
   margin-bottom: 70px;
 }
