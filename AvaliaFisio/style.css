@@ -289,6 +289,11 @@ section.description-section{
   padding-bottom: 15px;
   margin-bottom: 20px;
   margin-top: 20px;
+  max-width: 500px;
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .main-p{
@@ -494,11 +499,16 @@ section.description-section{
 
 .research-section h3{
   background: linear-gradient(to right, #235A86, #57E4FF);
-  border-radius: 30px;
-  color: black;
-  font-size: 21px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+    border-radius: 30px;
+    color: black;
+    font-size: 21px;
+    padding-top: 10px;
+    width: 300px;
+    padding-bottom: 10px;
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .research-section h3 a{
