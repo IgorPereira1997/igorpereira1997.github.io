@@ -231,7 +231,7 @@
 
 /* Estilizando o corpo da página */
 body {
-  display: flex;
+  /*display: flex;*/
   background-color: #0f1728; /*#0C2365;*/
   flex-direction: column;
   justify-content: center;
@@ -398,6 +398,7 @@ section.description-section{
   align-items: center;
   margin-right: 20px;
   margin-left: 20px;
+  margin: 0 auto;
 }
 
 #myCarousel span#carousel-control-prev-icon{
@@ -425,6 +426,7 @@ section.description-section{
   align-items: center;
   margin-right: 20px;
   margin-left: 20px;
+  margin: 0 auto;
 }
 
 #myCarouselVideo video{
@@ -602,9 +604,11 @@ footer {
   header {
     padding: 40px;
   }
-  .video-settings {
-    max-width: 90%;
+
+  #myCarousel, #myCarouselVideo{
+    max-width: 70%;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -616,13 +620,10 @@ footer {
     padding: 20px;
   }
 
-  .carousel-item img {
-    max-width: 80%;
+  #myCarousel, #myCarouselVideo{
+    max-width: 60%;
   }
 
-  .video-settings {
-    max-width: 90%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -630,11 +631,8 @@ footer {
   header img.header-logo{
     max-width: 30%;
   }
-  .carousel-item img {
-    max-width: 50%;
-  }
 
-  .video-settings {
+  #myCarousel, #myCarouselVideo{
     max-width: 50%;
   }
 }
@@ -645,12 +643,10 @@ footer {
     max-width: 20%;
   }
 
-  .carousel-item img {
-    max-width: 50%;
+
+  #myCarousel, #myCarouselVideo{
+    max-width: 30%;
   }
 
-  .video-settings {
-    max-width: 50%;
-  }
 
 }
